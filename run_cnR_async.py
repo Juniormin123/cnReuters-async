@@ -44,19 +44,19 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    if args.verbose:    # type: ignore
+    if args.verbose:
         level = logging.DEBUG
     else:
         level = logging.INFO
 
     asyncio.run(
         main(
-            args.page_count,          # type: ignore
-            args.delay,               # type: ignore
-            args.downloader_count,    # type: ignore
-            args.output_path,         # type: ignore
-            args.tag,                 # type: ignore
-            args.con_file,            # type: ignore
+            args.page_count,      
+            args.delay,           
+            args.downloader_count,
+            args.output_path,     
+            args.tag,             
+            args.con_file,        
             level
         )
     )
